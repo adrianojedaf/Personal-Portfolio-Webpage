@@ -1,0 +1,32 @@
+
+@media all and (min-width: 576px) {
+    .container-fluid {
+        padding-right: 5% !important;
+        padding-left: 5% !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-fluid {
+        padding-right: 8% !important;
+        padding-left: 8% !important;
+    }
+}
+
+.navbar-brand {
+    font-weight: 500;
+}
+
+a span {
+    font-weight: 500;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .55s;
+}
+
+a span:hover {
+    background-size: 100% 2px;
+}
