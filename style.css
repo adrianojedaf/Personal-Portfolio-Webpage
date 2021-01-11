@@ -14,7 +14,15 @@
 }
 
 .navbar-brand {
+    font-size: 1.5rem;
     font-weight: 500;
+}
+
+header {
+  background-image: url(images/portada2.JPG);
+  background-size: cover;
+  background-position: center top;
+  height: 100vh;
 }
 
 a span {
@@ -29,4 +37,12 @@ a span {
 
 a span:hover {
     background-size: 100% 2px;
+}
+
+.header-social {
+    right: 0;
+    top: 60%;
+}
+.header-social a {
+    color:white;
 }
