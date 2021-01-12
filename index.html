@@ -38,10 +38,10 @@
                 <div class="collapse navbar-collapse" id="navbarToggler">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-dark pr-5" href="#"><span class="pb-2">Portfolio</span></a>
+                            <a class="nav-link text-dark pr-5" href="#portfolio"><span class="pb-2">Portfolio</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark pr-5" href="#"><span class="pb-2">About Me</span></a>
+                            <a class="nav-link text-dark pr-5" href="#aboutme"><span class="pb-2">About Me</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" href="#"><span class="pb-2">Contact</span></a>
@@ -57,35 +57,85 @@
             <a href="https://www.instagram.com/adrianojedaf/"><i class="fa-3x fab fa-instagram p-2"></i></a><br>
         </div>
 
-        <div class="position-absolute" id="readmore">
-            <a class="text-white" href="#Portfolio"><i class="fa-4x fal fa-angle-double-down"></i></a>
+        <div class="position-absolute d-none d-md-block" id="readmore">
+            <a class="text-white" href="#portfolio"><i class="fa-4x fal fa-angle-double-down"></i></a>
         </div>
 
     </header>
 
     <!-------------------------------PORTFOLIO----------------------------------------------->
-    <section  class="container-fluid" id="Portfolio">
+    <section class="container-fluid" id="portfolio">
 
-        <div class="row mt-5 mb-5 flex-wrap flex-md-nowrap">
-            <div class="col col-md-6 portfolio-box"><img class="img-fluid w-100" src="images/project1.png"></div>
-            <div class="col col-md-6 portfolio-box"><img class="img-fluid w-100" src="images/project2.png"></div>
+        <div class="vertical-alignment">
+            <h3 class="text-center m-auto p-3">PORTFOLIOS</h3>
         </div>
-        <div class="row flex-wrap flex-md-nowrap">
-            <div class="col col-md-6 portfolio-box"><img class="img-fluid w-100 h-100"
-                    src="images\project3.png"></div>
-            <div class="col col-md-6 portfolio-box"><img class="img-fluid w-100"
-                    src="https://via.placeholder.com/800/000000/FFFFFF/?text=IPaddress.netC/O https://placeholder.com/#How_To_Set_Background_Text_Color">
+
+        <div class="row mt-5 mb-md-5 flex-wrap flex-md-nowrap  justify-content-around">
+            <div class="col-md-6">
+                <a href="https://airbnbnewscloneadrian.netlify.app/">
+                    <div class="portfolio-box m-auto">
+                        <img class="img-fluid" src="images/project1.png">
+                        <div class="portfolio-foot p-1 pl-2">
+                            <p class="portfolio-title">Airbnb News Clone</p>
+                            <p>HTML / CSS (Bootstrap)</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-6">
+                <a href="https://newsweekcloneadrian.netlify.app/">
+                    <div class="portfolio-box m-auto">
+                        <img class="img-fluid" src="images/project2.png">
+                        <div class="portfolio-foot p-1 pl-2">
+                            <p class="portfolio-title">Newsweek Clone</p>
+                            <p>HTML / CSS</p>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
+
+        <div class="row mb-5 flex-wrap flex-md-nowrap  justify-content-around">
+            <div class="col-md-6">
+                <a href="https://applecloneadrian.netlify.app/">
+                    <div class="portfolio-box m-auto">
+                        <img class="img-fluid" src="images/project3.png">
+                        <div class="portfolio-foot p-1 pl-2">
+                            <p class="portfolio-title">Apple Clone</p></strong>
+                            <p>HTML / CSS</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-6 ">
+                <a href="#">
+                    <div class="portfolio-box m-auto">
+                        <img class="img-fluid"
+                            src="https://via.placeholder.com/800/000000/FFFFFF/?text=IPaddress.netC/O https://placeholder.com/#How_To_Set_Background_Text_Color">
+                        <div class="portfolio-foot p-1 pl-2">
+                            <p class="portfolio-title">In the making</p>
+                            <p>In the making</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
 
     </section>
 
     <!-------------------------------ABOUT ME----------------------------------------------->
-    <section class="container-fluid" id="aboutme">
-        <div class="row">
-            <div class="col-12 col-md-4"><img src=""></div>
-            <div class="col-12 col-md-8">
+    <section class="aboutme-spacing" id="aboutme">
+        <div class="container-fluid">
+            <div class="vertical-alignment">
+                <h3 class="text-center m-auto pt-5 text-white">ABOUT ME</h3>
+            </div>
 
+            <div class="row">
+                <div class="col-12 col-md-3 aboutme-photo"><img class="rounded-circle" width="270px" src="images/adrianperfil.jpg"></div>
+                <div class="col-12 col-md-9">
+
+                </div>
             </div>
         </div>
     </section>
@@ -93,13 +143,14 @@
     <!-------------------------------FOOTER----------------------------------------------->
     <footer>
         <div class="container-fluid text-center pt-5 pb-5">
-            <p class="text-white">STAY IN CONTACT</p><br>
-            <div class="footer-social mr-3 d-inline-block">
-                <a href="https://github.com/adrianojedaf"><i class="fa-3x fab fa-github-square px-4"></i></a>
-                <a href="https://twitter.com/adrianojedaf"><i class="fa-3x fab fa-twitter-square px-4"></i></a>
-                <a href="https://dev.to/adrianojedaf"><i class="fa-3x fab fa-dev px-4"></i></a>
-                <a href="https://www.instagram.com/adrianojedaf/"><i class="fa-3x fab fa-instagram px-4"></i></a>
+            <p class="text-white footer-title">STAY IN CONTACT</p><br>
+            <div class="footer-social mr-3">
+                <a href="https://github.com/adrianojedaf"><i class="fa-3x fab fa-github-square px-3"></i></a>
+                <a href="https://twitter.com/adrianojedaf"><i class="fa-3x fab fa-twitter-square px-3"></i></a>
+                <a href="https://dev.to/adrianojedaf"><i class=" fa-3x fab fa-dev px-3"></i></a>
+                <a href="https://www.instagram.com/adrianojedaf/"><i class="fa-3x fab fa-instagram px-3"></i></a>
             </div>
+            <p class="copyright-mark mt-5 text-white">© 2021 Adrian Ojeda Firgau</p>
         </div>
     </footer>
 

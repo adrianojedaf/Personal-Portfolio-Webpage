@@ -1,26 +1,33 @@
+/*general*/
+
 @media all and (min-width: 0) {
     .container-fluid {
-        padding-right: 5% !important;
-        padding-left: 5% !important;
+        padding-right: 10% !important;
+        padding-left: 10% !important;
     }
 }
 
-@media all and (min-width: 992px) {
+@media all and (min-width: 575px) {
     .container-fluid {
-        padding-right: 6% !important;
-        padding-left: 6% !important;
+        padding-right: 8% !important;
+        padding-left: 8% !important;
     }
 }
 
 @media (min-width: 1200px) {
     .container-fluid {
-        padding-right: 7% !important;
-        padding-left: 7% !important;
+        padding-right: 13% !important;
+        padding-left: 13% !important;
     }
 }
 
 body {
     font-family: 'Raleway', sans-serif;
+    background-color: #d1ecff;
+}
+
+.vertical-alignment {
+    margin: 100px 0;
 }
 
 /*------HEADER-------*/
@@ -41,24 +48,39 @@ a span {
     font-weight: 600;
     letter-spacing: 4px;
     text-decoration: none;
-    background-image: linear-gradient(currentColor, currentColor);
+    background-image: linear-gradient(rgb(65, 70, 82), rgb(65, 70, 82));
     background-position: 0% 100%;
     background-repeat: no-repeat;
-    background-size: 0% 2px;
+    background-size: 0% 3px;
     transition: background-size .55s;
 }
 
 a span:hover {
-    background-size: 100% 2px;
+    background-size: 100% 3px;
 }
 
-.header-social {
-    right: 0;
-    bottom: 5%;
+@media (max-width: 800px) {
+    .header-social {
+        right: 0;
+        bottom: 15%;
+    }
+}
+
+@media (min-width: 800px) {
+    .header-social {
+        right: 0;
+        bottom: 6%;
+    }
 }
 
 .header-social a {
     color: white;
+}
+
+.header-social a:hover {
+    color: white;
+    opacity: .8;
+    transition: .3s;
 }
 
 #readmore {
@@ -67,11 +89,12 @@ a span:hover {
 }
 
 #readmore a i {
-    opacity: .5;
+    color: white;
+    opacity: .1;
 }
 
 #readmore:hover {
-    transform: scale(1.1);
+    transform: scale(1.06);
     transition-duration: .5s;
     opacity: .9;
 }
@@ -84,32 +107,80 @@ a span:hover {
 
 /*---------PORTFOLIO------------*/
 .portfolio-box {
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.151);
+    border-top: solid 4px #373a40;
+    border-right: solid 4px#373a40;
+    border-left: solid 4px#373a40;
+    max-width: 610px;
 }
 
 .portfolio-box:hover {
     transform: scale(1.01);
     transition: 0.35s;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.103);
 }
 
-.card {
-    max-width: 100%;
-    height: auto;
+@media all and (max-width: 767px) {
+    .portfolio-box {
+        margin-bottom: 40px !important;
+    }
 }
+
+.portfolio-foot {
+    background-color: #373a40;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.portfolio-foot p {
+    color: white;
+    margin-bottom: 0;
+}
+
+.portfolio-title {
+    font-size: 22px;
+    font-weight: 500;
+    word-spacing: 2px;
+}
+
+/*---------ABOUT ME------------*/
+#aboutme {
+    background-color: black;
+}
+
+.aboutme-spacing {
+    padding-bottom: 150px;
+}
+@media (max-width: 767px) {
+    .aboutme-photo {
+        text-align: center;
+    }
+}
+
+
 /*---------FOOTER------------*/
 
 footer {
-    background-color: rgb(49, 49, 49);
+    background-color: #373a40;
 }
 
 footer a {
     color: white;
 }
 
-footer p {
+footer a:hover {
+    color: white;
+    opacity: .8;
+    transition: .3s;
+}
+
+.footer-title {
     word-spacing: 5px;
     letter-spacing: 3px;
     font-size: 20px;
     font-weight: 600;
+}
+
+.copyright-mark {
+    font-size: 14px;
+    opacity: .4;
 }
