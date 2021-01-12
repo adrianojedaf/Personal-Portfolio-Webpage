@@ -1,20 +1,33 @@
-@media all and (min-width: 576px) {
+@media all and (min-width: 0) {
     .container-fluid {
         padding-right: 5% !important;
         padding-left: 5% !important;
     }
 }
 
-@media (min-width: 1200px) {
+@media all and (min-width: 992px) {
     .container-fluid {
-        padding-right: 8% !important;
-        padding-left: 8% !important;
+        padding-right: 6% !important;
+        padding-left: 6% !important;
     }
 }
 
+@media (min-width: 1200px) {
+    .container-fluid {
+        padding-right: 7% !important;
+        padding-left: 7% !important;
+    }
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/*------HEADER-------*/
+
 .navbar-brand {
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 header {
@@ -25,7 +38,8 @@ header {
 }
 
 a span {
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: 4px;
     text-decoration: none;
     background-image: linear-gradient(currentColor, currentColor);
     background-position: 0% 100%;
@@ -49,8 +63,7 @@ a span:hover {
 
 #readmore {
     bottom: 10px;
-    left: 50%;
-    text-decoration: none;
+    left: 49.25%;
 }
 
 #readmore a i {
@@ -69,10 +82,34 @@ a span:hover {
     border-radius: 20px;
 }
 
+/*---------PORTFOLIO------------*/
+.portfolio-box {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.151);
+}
+
+.portfolio-box:hover {
+    transform: scale(1.01);
+    transition: 0.35s;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.103);
+}
+
+.card {
+    max-width: 100%;
+    height: auto;
+}
+/*---------FOOTER------------*/
+
 footer {
     background-color: rgb(49, 49, 49);
 }
 
 footer a {
     color: white;
+}
+
+footer p {
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    font-size: 20px;
+    font-weight: 600;
 }
