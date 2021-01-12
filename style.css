@@ -46,3 +46,36 @@ a span:hover {
 .header-social a {
     color:white;
 }
+
+#readmore {
+    bottom: 10px;
+    left: 50%;
+    text-decoration: none;
+    /* transition: ease-in-out; */
+}
+
+#readmore a i {
+    opacity: .5;
+}
+
+#readmore:hover {
+    transform: scale(1.1);
+    transition-duration: .5s;
+    opacity: .9;
+}
+
+.header-text {
+    left: 10px;
+    bottom: 60%;
+    border-radius: 20px;
+}
+
+#description {
+    background-color: rgba(214, 214, 214, 0.219);
+    border-radius: 10px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
