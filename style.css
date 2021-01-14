@@ -41,6 +41,20 @@ body {
     font-weight: 600;
 }
 
+/* .small-menu {
+    top: 0;
+    left: 0;
+}
+
+.small-menu2 {
+    width: 100vh;
+    /* height:  100vh; */
+} */
+
+.navbar-toggler {
+    z-index: 1;
+}
+
 header {
     background-image: url(images/portada2.JPG);
     background-size: cover;
@@ -157,10 +171,18 @@ a span:hover {
 }
 
 .aboutme-description {
+    line-height: 1.1;
+    font-weight: 400;
     text-align: center;
-    font-weight: 100;
     font-size: 1.3rem;
+    align-content: center;
 }
+
+.vvv {
+    justify-content: center;
+  align-content: center;
+}
+
 /*---------FOOTER------------*/
 
 footer {
