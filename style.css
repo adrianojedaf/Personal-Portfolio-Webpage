@@ -26,8 +26,12 @@ body {
     background-color: #d1ecff;
 }
 
-.vertical-alignment {
+.vertical-alignment-margin {
     margin: 100px 0;
+}
+
+.vertical-alignment-padding {
+    padding: 100px 0;
 }
 
 /*------HEADER-------*/
@@ -45,8 +49,9 @@ header {
 }
 
 a span {
+    font-size: 1.3rem;
     font-weight: 600;
-    letter-spacing: 4px;
+    letter-spacing: 1px;
     text-decoration: none;
     background-image: linear-gradient(rgb(65, 70, 82), rgb(65, 70, 82));
     background-position: 0% 100%;
@@ -143,20 +148,19 @@ a span:hover {
 }
 
 /*---------ABOUT ME------------*/
-#aboutme {
-    background-color: black;
-}
-
 .aboutme-spacing {
-    padding-bottom: 150px;
-}
-@media (max-width: 767px) {
-    .aboutme-photo {
-        text-align: center;
-    }
+    padding: 150px;
 }
 
+.aboutme-icon {
+    opacity: .8;
+}
 
+.aboutme-description {
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.3rem;
+}
 /*---------FOOTER------------*/
 
 footer {
