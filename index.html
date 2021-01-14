@@ -25,7 +25,7 @@
 
     <!-------------------------------HEADER----------------------------------------------->
     <header class="position-relative">
-        <nav class="navbar navbar-expand-md">
+        <nav class="navbar navbar-expand-md position-relative">
             <div class="container-fluid">
                 <a class="navbar-brand text-dark" href="#">Adrian Firgau</a>
 
@@ -35,8 +35,8 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse bg-white" id="navbarToggler">
-                    <ul class="navbar-nav ml-auto p-5 small-menu2">
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="nav-link text-dark pr-5" href="#portfolio"><span class="pb-2">Portfolio</span></a>
                         </li>
@@ -44,7 +44,7 @@
                             <a class="nav-link text-dark pr-5" href="#aboutme"><span class="pb-2">About Me</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#"><span class="pb-2">Contact</span></a>
+                            <a class="nav-link text-dark" href="mailto:adrianojedaf@hotmail.com"><span class="pb-2">Contact</span></a>
                         </li>
                     </ul>
                 </div>
@@ -57,7 +57,7 @@
             <a href="https://www.instagram.com/adrianojedaf/"><i class="fa-3x fab fa-instagram p-2"></i></a><br>
         </div>
 
-        <div class="position-absolute d-none d-md-block" id="readmore">
+        <div class="position-absolute" id="readmore">
             <a class="text-white" href="#portfolio"><i class="fa-4x fal fa-angle-double-down"></i></a>
         </div>
 
@@ -127,34 +127,28 @@
 
     <!-------------------------------ABOUT ME----------------------------------------------->
 
-    <section class="container-fluid pt-5" id="aboutme">
+    <section class="container-fluid pb-3 pt-1 pt-md-5" id="aboutme">
         <hr class="pt-5">
 
-        <div class="row vvv">
-            <div class="col-12 col-md-">
+        <div class="row d-justify-content-center align-items-center">
+            <div class="col-12 col-lg-3">
                 <div class="text-center mb-5 aboutme-photo"><img class="rounded-circle" width="200px"
-                    src="images/adrianperfil.jpg"></div>
+                        src="images/adrianperfil.jpg"></div>
             </div>
-            <div class="col-12 col-md-9 pb-5">
-                    <p class="text-left aboutme-description">In September 2020 I started learning web development on my
-                        own
-                        and
-                        since then I have not stoped learning something new every day. Fortunately, I had the oportunity to
-                        join
-                        a
-                        bootcamp for full-stack web development in November and I am enjoying it a lot. I hope to continue
-                        to
-                        form
-                        myself in this area and to connect with many more people who share the same feeling for it. Happy
-                        coding!
-                    </p>
+            <div class="col-12 col-lg-9 pb-5">
+                <p class="text-left aboutme-description">In September 2020 I started learning web development and
+                    since then I have not stoped learning something new every day. Fortunately, I had the oportunity to
+                    join Altcademy's full-stack web development Bootcamp in November and I am enjoying it a lot. I hope to continue
+                    to form myself in this area and to connect with many more people who also share the same feeling for it. Happy
+                    coding for you all!
+                </p>
             </div>
         </div>
     </section>
 
     <!-------------------------------FOOTER----------------------------------------------->
     <footer>
-        <div class="container-fluid text-center pt-5 pb-5">
+        <div class="container-fluid text-center pt-5 pb-5" id="contact">
             <p class="text-white footer-title">STAY IN CONTACT</p><br>
             <div class="footer-social mr-3">
                 <a href="https://github.com/adrianojedaf"><i class="fa-3x fab fa-github-square p-1 p-md-4"></i></a>
@@ -162,7 +156,11 @@
                 <a href="https://dev.to/adrianojedaf"><i class=" fa-3x fab fa-dev p-1 p-md-4"></i></a>
                 <a href="https://www.instagram.com/adrianojedaf/"><i class="fa-3x fab fa-instagram p-1 p-md-4"></i></a>
             </div>
-            <p class="copyright-mark mt-5 text-white">© 2021 Adrian Ojeda Firgau</p>
+            <div class="d-flex justify-content-center align-items-center">
+                <p class="pt-3 sendemail"><a href="mailto:adrianojedaf@hotmail.com">Send me an email</a></p>
+                <a href="mailto:adrianojedaf@hotmail.com"><i class="fa-1x fas fa-envelope pl-3"></i></a>
+            </div>
+            <p class="copyright-mark mt-2 text-white">© 2021 Adrian Ojeda Firgau</p>
         </div>
     </footer>
 

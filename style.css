@@ -41,16 +41,6 @@ body {
     font-weight: 600;
 }
 
-/* .small-menu {
-    top: 0;
-    left: 0;
-}
-
-.small-menu2 {
-    width: 100vh;
-    /* height:  100vh; */
-} */
-
 .navbar-toggler {
     z-index: 1;
 }
@@ -124,6 +114,18 @@ a span:hover {
     border-radius: 20px;
 }
 
+@media (max-width: 767px) {
+
+    #navbarToggler {
+    background-color: white;
+    width: 100%;
+    padding: 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+}
 /*---------PORTFOLIO------------*/
 .portfolio-box {
     border-top: solid 4px #373a40;
@@ -209,4 +211,9 @@ footer a:hover {
 .copyright-mark {
     font-size: 14px;
     opacity: .4;
+}
+
+.sendemail a {
+    font-size: 18px;
+    text-decoration: none;
 }
